@@ -10,10 +10,18 @@
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- =========================
+         NAVBAR
+    ========================== -->
     <header>
-        <nav class="navbar">
-            <h2 class="logo">cathy febyana<span>.</span></h2>
+        <nav>
+            <div class="logo">
+                Cathy<span>.</span>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
 
             <ul id="navMenu">
                 <li><a href="#home">Home</a></li>
@@ -22,60 +30,77 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </nav>
     </header>
 
 
-    <!-- HOME -->
-    <section id="home" class="hero">
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero" id="home">
 
         <div class="hero-text">
+
             <p class="hello">HELLO, I'M</p>
 
-            <h1>cathy febyana</h1>
+            <h1>Cathy Febyana</h1>
 
             <h2>Front-End Web Developer</h2>
 
             <p>
-                Saya adalah lulusan SMK jurusan Rekayasa Perangkat Lunak
-                yang tertarik pada pengembangan website menggunakan HTML,
-                CSS, dan JavaScript.
+                Saya adalah seorang Front-End Web Developer yang tertarik
+                dalam membuat website yang modern, responsif, dan mudah
+                digunakan.
             </p>
 
-            <a href="#projects" class="btn">Lihat Project</a>
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+
         </div>
 
 
-        <!-- FOTO PROFIL -->
+        <!-- FOTO -->
         <div class="hero-image">
-            <img src="img.jpg.jpeg" alt="Foto Profil Cathy Febyana">
+
+            <div class="circle">
+
+                <!-- GANTI foto.jpg dengan nama file foto kamu -->
+                <img src="foto.jpg" alt="Foto Cathy Febyana">
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section class="section" id="about">
 
         <h2 class="title">About Me</h2>
 
         <div class="about-box">
+
             <p>
-                Saya merupakan lulusan SMK Rekayasa Perangkat Lunak (RPL)
-                yang memiliki minat dalam dunia teknologi dan pengembangan
-                website. Saya senang mempelajari hal baru dan mengembangkan
-                kemampuan dalam membuat tampilan website yang sederhana,
-                rapi, dan responsif.
+                Halo! Saya Cathy Febyana. Saya memiliki ketertarikan
+                terhadap pengembangan website, khususnya pada bagian
+                front-end. Saya senang mempelajari teknologi baru dan
+                membuat tampilan website yang menarik, responsif,
+                serta nyaman digunakan.
             </p>
+
         </div>
 
     </section>
 
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section class="section" id="skills">
 
         <h2 class="title">My Skills</h2>
 
@@ -83,32 +108,50 @@
 
             <div class="skill">
                 <h3>HTML</h3>
-                <p>Membuat struktur halaman website.</p>
+                <p>
+                    Membuat struktur website menggunakan HTML
+                    yang rapi dan semantik.
+                </p>
             </div>
 
             <div class="skill">
                 <h3>CSS</h3>
-                <p>Membuat tampilan website menjadi menarik.</p>
+                <p>
+                    Membuat tampilan website yang menarik,
+                    modern, dan responsive.
+                </p>
             </div>
 
             <div class="skill">
                 <h3>JavaScript</h3>
-                <p>Membuat website lebih interaktif.</p>
+                <p>
+                    Menambahkan interaksi dan fungsi dinamis
+                    pada website.
+                </p>
             </div>
 
             <div class="skill">
                 <h3>Web Design</h3>
-                <p>Membuat desain website yang sederhana dan rapi.</p>
+                <p>
+                    Mendesain tampilan website agar terlihat
+                    sederhana dan profesional.
+                </p>
             </div>
 
             <div class="skill">
                 <h3>Responsive Design</h3>
-                <p>Membuat website dapat digunakan di berbagai perangkat.</p>
+                <p>
+                    Membuat website dapat digunakan dengan baik
+                    pada berbagai ukuran layar.
+                </p>
             </div>
 
             <div class="skill">
                 <h3>Problem Solving</h3>
-                <p>Mencari solusi untuk masalah dalam pembuatan website.</p>
+                <p>
+                    Mencari solusi terhadap masalah dalam proses
+                    pengembangan website.
+                </p>
             </div>
 
         </div>
@@ -116,51 +159,72 @@
     </section>
 
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+    <section class="section" id="projects">
 
         <h2 class="title">My Projects</h2>
 
         <div class="projects-container">
 
             <div class="project">
-                <div class="project-icon">💻</div>
 
-                <h3>Website Portfolio</h3>
+                <div class="project-icon">
+                    🌐
+                </div>
+
+                <h3>Portfolio Website</h3>
 
                 <p>
-                    Website portfolio pribadi menggunakan HTML dan CSS.
+                    Website portfolio pribadi yang dibuat menggunakan
+                    HTML, CSS, dan JavaScript.
                 </p>
 
-                <a href="#">View Project →</a>
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
             </div>
 
 
             <div class="project">
-                <div class="project-icon">🌐</div>
 
-                <h3>Website Landing Page</h3>
+                <div class="project-icon">
+                    🛒
+                </div>
+
+                <h3>Landing Page</h3>
 
                 <p>
                     Landing page sederhana dengan desain modern
-                    dan responsif.
+                    dan responsive.
                 </p>
 
-                <a href="#">View Project →</a>
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
             </div>
 
 
             <div class="project">
-                <div class="project-icon">📝</div>
 
-                <h3>Website Informasi</h3>
+                <div class="project-icon">
+                    💻
+                </div>
+
+                <h3>Web Application</h3>
 
                 <p>
-                    Website informasi sederhana menggunakan HTML,
-                    CSS, dan JavaScript.
+                    Project website interaktif menggunakan
+                    JavaScript.
                 </p>
 
-                <a href="#">View Project →</a>
+                <a href="#" target="_blank">
+                    View Project →
+                </a>
+
             </div>
 
         </div>
@@ -168,29 +232,33 @@
     </section>
 
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact">
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section class="section contact" id="contact">
 
         <h2 class="title">Contact Me</h2>
 
         <p>
-            Jika ingin menghubungi saya, silakan melalui:
+            Jika ingin bekerja sama atau berdiskusi mengenai project,
+            silakan hubungi saya.
         </p>
 
         <div class="contact-info">
 
             <p>
-                📧 Email:
-                <span>cathyfebyanakety@gmail.com</span>
+                Email:
+                <span>your@email.com</span>
             </p>
 
             <p>
-                📱 WhatsApp:
-                <span>083159297872</span>
+                Instagram:
+                <span>@username</span>
             </p>
 
             <p>
-                📍 Seburing, Indonesia
+                GitHub:
+                <span>github.com/username</span>
             </p>
 
         </div>
@@ -198,17 +266,18 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
     <footer>
 
         <p>
-            © 2026 cathy febyana. All Rights Reserved.
+            © 2026 Cathy Febyana. All Rights Reserved.
         </p>
 
     </footer>
 
 
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
