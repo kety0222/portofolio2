@@ -11,13 +11,16 @@ body {
     color: #1e293b;
 }
 
-/* Navbar */
+/* =========================
+   NAVBAR
+========================= */
+
 header {
     background: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 nav {
@@ -61,7 +64,10 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* Hero */
+/* =========================
+   HERO
+========================= */
+
 .hero {
     max-width: 1100px;
     min-height: 90vh;
@@ -98,6 +104,8 @@ nav ul li a:hover {
     color: #64748b;
 }
 
+/* Button */
+
 .btn {
     display: inline-block;
     margin-top: 25px;
@@ -113,27 +121,40 @@ nav ul li a:hover {
     background: #1d4ed8;
 }
 
-/* Foto */
+/* =========================
+   FOTO
+========================= */
+
 .hero-image {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+/* Ukuran foto 100 x 100 px */
+
 .circle {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    overflow: hidden;
     background: #2563eb;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
-    font-weight: bold;
     box-shadow: 0 15px 40px rgba(37, 99, 235, 0.3);
 }
 
-/* Section */
+/* Foto di dalam circle */
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================
+   SECTION
+========================= */
+
 .section {
     max-width: 1100px;
     margin: auto;
@@ -146,14 +167,17 @@ nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-/* About */
+/* =========================
+   ABOUT
+========================= */
+
 .about-box {
     max-width: 800px;
     margin: auto;
     padding: 30px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
 .about-box p {
@@ -161,7 +185,10 @@ nav ul li a:hover {
     color: #64748b;
 }
 
-/* Skills */
+/* =========================
+   SKILLS
+========================= */
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -172,7 +199,7 @@ nav ul li a:hover {
     background: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
 }
 
@@ -190,7 +217,10 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Projects */
+/* =========================
+   PROJECTS
+========================= */
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -201,7 +231,12 @@ nav ul li a:hover {
     background: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
 }
 
 .project-icon {
@@ -225,7 +260,14 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* Contact */
+.project a:hover {
+    color: #1d4ed8;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
 .contact {
     text-align: center;
 }
@@ -239,7 +281,10 @@ nav ul li a:hover {
     color: #2563eb;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
+
 footer {
     text-align: center;
     background: #0f172a;
@@ -247,8 +292,13 @@ footer {
     padding: 25px;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE / HP
+========================= */
+
 @media (max-width: 768px) {
+
+    /* Navbar */
 
     nav ul {
         display: none;
@@ -270,6 +320,8 @@ footer {
         display: block;
     }
 
+    /* Hero */
+
     .hero {
         flex-direction: column-reverse;
         text-align: center;
@@ -284,14 +336,35 @@ footer {
         font-size: 24px;
     }
 
+    /* Foto tetap 100 x 100 */
+
     .circle {
-        width: 190px;
-        height: 190px;
-        font-size: 70px;
+        width: 100px;
+        height: 100px;
     }
+
+    /* Skills & Projects */
 
     .skills-container,
     .projects-container {
         grid-template-columns: 1fr;
     }
 }
+
+Yang perlu diperhatikan di HTML
+
+Agar CSS di atas benar-benar mengatur foto, struktur HTML bagian foto harus seperti ini:
+
+<div class="hero-image">
+    <div class="circle">
+        <img src="foto.jpg" alt="Foto Profil">
+    </div>
+</div>
+
+
+Kalau nama file fotomu misalnya profile.png, tinggal ganti:
+
+<img src="profile.png" alt="Foto Profil">
+
+
+Dengan kode ini foto akan menjadi 100 × 100 px dan otomatis dipotong berbentuk lingkaran menggunakan object-fit: cover.
